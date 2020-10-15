@@ -1,17 +1,32 @@
-ol{
+ol {
   list-style-type: none !important;
 }
-.code_block
-{
-    border-radius: 10px;
+.code_block {
+  border-radius: 10px;
 }
-#article_title
-{
-    margin-top: 50px;
-    margin-bottom: 50px;
+#article_title {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-body
+body {
+  background-color: #f0f0f0;
+}
+#id_form {
+  border: black solid 1px;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 20px;
+}
+.form-check {
+  padding-left: 40px;
+}
+#add_info {
+  margin-bottom: 20px;
+  resize: none;
+}
+#send_btn
 {
-    background-color: #f0f0f0;
+float: right;
+position: absolute;
 }
