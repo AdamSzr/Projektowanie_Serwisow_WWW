@@ -1,0 +1,17 @@
+body
+{
+    background-color: green !important;
+}
+p{
+    color: red;
+    font-size: 24px;
+}
+.kolorek
+{
+    color: blue;
+}
+
+#zielony
+{
+    color: #00ff00;
+}
