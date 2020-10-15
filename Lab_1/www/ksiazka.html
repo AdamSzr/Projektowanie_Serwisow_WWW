@@ -1,60 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>Strona z książki.</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
 
-  <title>Bare - Start Bootstrap Template</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="../index.html">Główna
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="list.html">List</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ksiazka.html">Podręcznik</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="form.html">Formularz</a>
-          </li>
-        </ul>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Adam Szreiber Lab_1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                >Główna
+                <span class="sr-only">
+                  (current)
+                </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="list.html">List</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Podręcznik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Formularz</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" >
+      <h2 class="text-center" id="article_title">
+        Otrzymywanie poczty elektronicznej POP3 za pomoca TCP
+      </h2>
+      <p>
+        Platfroma .NET Framework nie oferuje obsługi POP3 na poziomie warstwy
+        aplickaji. Jezeli więc chcemy otrzymac pocztę z serwera POP3, musimy
+        przygotować własną warstwę TCP. Na szczęście jest to prosty protokół, a
+        komunikacja POP3 odbywa się w sposób podobny do przedstawionego poniżej:
+      </p>
+
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Klient</th>
+            <th>Serwer Poczty</th>
+            <th>Uwagi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nawiazanie połączenia przez klienta...</td>
+            <td>+OK Witaj</td>
+            <td>Komunikat powitania</td>
+          </tr>
+          <tr>
+            <td>User janek</td>
+            <td>+OK Hasło jest wymagane.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PASS hasło</td>
+            <td>+OK Zalogowany.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>List</td>
+            <td>
+              +OK <br />
+              1 1876 <br />
+              2 5421 <br />
+              3 845 <br />
+              .
+            </td>
+            <td>
+              Wyświetla identyfikator i wielkość pliku każdej wiadomości w
+              serwerze
+            </td>
+          </tr>
+          <tr>
+            <td>RETR 1</td>
+            <td>
+              +OK 1876 octets<br />
+              <i>Treść wiadomości #1 [...]</i><br />
+              .
+            </td>
+            <td>Wyszukanie wiadomości o podanym identyfikatorze</td>
+          </tr>
+          <tr>
+            <td>DELE 1</td>
+            <td>+OK Usunięto.</td>
+            <td>Usunięcie wiadomości z serwera</td>
+          </tr>
+          <tr>
+            <td>QUIT</td>
+            <td>+OK Do widzenia.</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Każde polecenie i podpowiedż kończy się znakiem nowego wiersza (CR+LF),
+        z wyjątkiem wielowierszowych poleceń LIST i RETR, które kończą się
+        pojedyńczą kropką w odzielnym wierszu. Ponieważ nie można urzyć
+        StreamReader wraz z NetworkStream, możemy przystąpić do tworzenia metody
+        pomocniczej odpowiedzialnej za odczyt wiersza tekstu w sposób
+        niebuforowany.
+      </p>
+      <div class="text-light bg-dark code_block">
+        <ol>
+          <li>static string ReadLine()</li>
+          <li>{</li>
+          <li>
+            <ol>
+              <li>List &lt;byte&gt; lineBuffer = new List&lt;byte&gt;();</li>
+              <li>while(true)</li>
+              <li>{</li>
+              <li>
+                <ol>
+                  <li>int b = s.ReadByte();</li>
+                  <li>if(b==10 || b&lt;0) break;</li>
+                  <li>if(b!=13) lineBuffer.Add((byte)b);</li>
+                </ol>
+              </li>
+              <li>}</li>
+            </ol>
+          </li>
+          <li>}</li>
+        </ol>
+      </div>
+      <p>
+        Potrzebna nam również metoda pomocnicza przeznaczona do wysyłania
+        polecenia. Skoro zawsze oczekujemy otrzymania odpowiedzi zaczynającej
+        się od "+OK", to jednocześnie można odczytywać i weryfikować tę
+        odpowiedź:
+      </p>
+      <div class="text-light bg-dark code_block">
+        <ol>
+          <li>static void SendCommand(Stream stream, string line)</li>
+          <li>}</li>
+          <li>
+            <ol>
+              <li>byte[] data = Encoding.UTF8.GetBytes(line + "/r/n");</li>
+              <li>stream.Write(data, 0, data.Length);</li>
+              <li>string response = Readline(stream);</li>
+              <li>if(!response.StartsWith("+OK")</li>
+              <li>
+                <ol>
+                  throw new Exception("Błąd POP: "+response);
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>}</li>
+        </ol>
+      </div>
+      <p>
+        Kiedy mamy już przygotowane powyższe metody, zadanie polegające na
+        pobraniu poczty elektronicznej jest już łatwe. Nawiązaujemy połączenie
+        TCP na porcie 110 (jest to domyślny port dla POP3), a następnie
+        rozpoczynamy komunikację z serwerem.
+      </p>
     </div>
-  </nav>
 
-  <!-- Page Content -->
-  <div class="container">
-    
-    
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.slim.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

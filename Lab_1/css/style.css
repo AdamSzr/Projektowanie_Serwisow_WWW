@@ -1,0 +1,17 @@
+ol{
+  list-style-type: none !important;
+}
+.code_block
+{
+    border-radius: 10px;
+}
+#article_title
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+body
+{
+    background-color: #f0f0f0;
+}
