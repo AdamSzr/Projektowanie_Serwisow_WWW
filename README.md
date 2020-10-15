@@ -1,1 +1,1 @@
-# Przedmiot prowadzony w ramach 5 semestru.
+# Przedmiot prowadzony w ramach 5 semestru, studiów I stopnia Informatyka AMW.
