@@ -1,7 +1,7 @@
 # Przedmiot prowadzony w ramach 5 semestru, studiów I stopnia Informatyka AMW.
 
 ## [Lab_1](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_1)
-1. Wykorzystane technologie.
+### Wykorzystane technologie.
 * HTML5
 * JavaScript
 * Bootstrap
@@ -9,14 +9,14 @@
 
 ### Przedstawienie rezultatów.
 
-Strona główna - zawiera krótki opis moje osoby. Jako jedyna posiada plik .js w którym zawarte są elementy stylujące.
+___Strona główna___ - zawiera krótki opis moje osoby. Jako jedyna posiada plik .js w którym zawarte są elementy stylujące.
 ![Strona Główna](md_img/homepage.png)
 
-List - strona html sformatowana w list.
+___List___ - strona html sformatowana w list.
 ![List](md_img/list.png)
 
-Strona z podręcznika. 
+___Strona z podręcznika___ ( Book: [ C# 7.0 w pigułce](https://helion.pl/ksiazki/c-7-0-w-pigulce-wydanie-vii-joseph-albahari-ben-albahari,c7pig7.htm#format/d)). 
 ![Podrecznik](md_img/podrecznik.png)
 
-Strona z podręcznika. 
+___Przykładowy formularz___
 ![Formularz](md_img/form.png)
