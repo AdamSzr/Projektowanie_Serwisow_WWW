@@ -40,6 +40,7 @@ position: absolute;
 
 #id_list
 {
+  font-family: 'Inconsolata', monospace; 
   margin: 50px 0px 50px 0px;
   background: white;
   border: 1px solid black;
@@ -49,6 +50,7 @@ position: absolute;
 }
 #list_content
 {
+  
   padding-left: 50px;
   padding-right: 50px;
   text-align: justify;
@@ -77,8 +79,16 @@ padding: 60px 90px 60px 90px;
   font-size: x-large;
 }
 
-
-
+@font-face {
+  font-family: Nanum_Gothic_Coding;
+  src: url("..\font\NanumGothicCoding-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Nanum_Gothic_Coding;
+  src: url("..\font\NanumGothicCoding-Bold.ttf");
+  font-weight: bold;
+}
 /* #galery
 {
   overflow: hidden;
