@@ -4,14 +4,18 @@ console.log("Lab_3 Rozwiazania:");
 // ------------------------------ ZAD_1 -------------------------------
 function CountCharInString(text)
 {
-        var count = String(text).length;
-        console.info("Liczba liter -> "+count);
+        return text.length;
 }
+const test_count_char_in_string="podobny sposob nalezy wykorzystac inne dostepne metody Java Script do modyfikacji elementow strony";
+console.info("[Zad_1] Ile znakow w stringu.");
+console.info("input -> "+ test_count_char_in_string);
+console.info("output -> "+ this.CountCharInString(test_count_char_in_string))
+
 // ------------------------------ ZAD_2 -------------------------------
 function CountValuesInArray(array)
 {
     var count=0;
-    array.forEach((arg)=>{ count+=arg;});
+    array.forEach((arg)=>{count+=arg});
     return count;
 }
 var array_egzample = [10,20,30,40,50,60,70,80,90,100];
@@ -29,6 +33,11 @@ function TextMixer(text)
     }
     return new_text;
 }
+console.info("[Zad_3] StringMixer.");
+const text_argument="Janko z Bogdanca";
+console.info("input -> "+ text_argument);
+console.info("output -> "+ this.TextMixer(text_argument))
+
 
 // ------------------------------ ZAD_4 -------------------------------
 function isFloat( n ) {
@@ -79,6 +88,11 @@ function AlaFunction(imie,miesiac)
 
     return ret_string;
 }
+
+var arg=["Zenek","Grudzien"];
+console.info("[Zad_5] Aktywnosci "+arg[0]);
+console.info("input -> "+ arg[0]+" "+arg[1]);
+console.info("output -> "+ this.AlaFunction(arg[0],arg[1]));
 
 // ------------------------------ ZAD_6 -------------------------------
 const str = "Ania|Marcin|Bartek|Piotr|Kuba|Beata|Agnieszka";
