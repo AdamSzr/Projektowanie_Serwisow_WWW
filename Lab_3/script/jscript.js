@@ -1,6 +1,3 @@
-
-console.log("Lab_3 Rozwiazania:");
-
 // ------------------------------ ZAD_1 -------------------------------
 function CountCharInString(text)
 {
@@ -50,6 +47,15 @@ function Multiply(a,b)
  
     return false;
 }
+console.info("[Zad_4] Iloczyn liczb or false.");
+
+console.info("input -> [3, 3.52]");
+console.info("output -> "+ this.Multiply(3,3.52));
+console.info("input -> [3, \"text\" ]");
+console.info("output -> "+ this.Multiply(3,'text'));
+
+
+
 
 // ------------------------------ ZAD_5 -------------------------------
 //Napisz funkcje, która przyjmuje 2 parametry:
@@ -93,6 +99,10 @@ var arg=["Zenek","Grudzien"];
 console.info("[Zad_5] Aktywnosci "+arg[0]);
 console.info("input -> "+ arg[0]+" "+arg[1]);
 console.info("output -> "+ this.AlaFunction(arg[0],arg[1]));
+arg = ["Asia","kwiecien"];
+console.info("input -> "+ arg[0]+" "+arg[1]);
+console.info("output -> "+ this.AlaFunction(arg[0],arg[1]));
+
 
 // ------------------------------ ZAD_6 -------------------------------
 const str = "Ania|Marcin|Bartek|Piotr|Kuba|Beata|Agnieszka";
