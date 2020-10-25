@@ -1,6 +1,5 @@
-# Przedmiot prowadzony w ramach 5 semestru, studiów I stopnia Informatyka AMW.
+# Lab_1 Praca z systemem kontroli wersji. Podstawy WW&#8203;W.
 
-## [Lab_1](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_1)
 ### Wykorzystane technologie.
 * HTML5
 * JavaScript

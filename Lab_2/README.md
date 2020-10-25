@@ -1,6 +1,5 @@
 # Lab_2 Praca z elementami DOM + ćwiczenia
 
-## [Lab_2](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_2)
 ### Wykorzystane technologie.
 * HTML5
 * JavaScript
