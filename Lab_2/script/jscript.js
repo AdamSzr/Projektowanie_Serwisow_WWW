@@ -6,6 +6,11 @@ for(var i =0; i<headers.length;i++)
     headers[i].style.textAlign = "center";
 }
 
+var buttons=document.getElementsByTagName('button');
+for(var i =0; i<buttons.length;i++)
+{
+    buttons[i].style.backgroundColor = "#007bff";
+}
 // ===================== Ustawienia kart =====================================
 
 // SLIDER
@@ -40,13 +45,30 @@ anim_button.onclick = ()=>
     "use strict"; // dziala, poniewaz wczesniej zadeklarowalem wszystkie zmienne.
     if(anim_bool)
     {
-        anim_button.innerText = "ON";
+        anim_button.style.backgroundColor="#dc3545";
+        anim_button.innerText = "OFF";
         anim_bar.classList.remove("progress-bar-animated");
     }else
     {
-        anim_button.innerText = "OFF";
+        anim_button.style.backgroundColor="#28a745";
+        anim_button.innerText = "ON";
         anim_bar.classList.add("progress-bar-animated");
     }     
      anim_bool =  !anim_bool;
 }
+// Html Insert
+
+var btn_innertxt= document.getElementById("btn_inner_text");
+var btn_innerhtml= document.getElementById("btn_inner_html");
+var displayArea=document.getElementById("display_area");
+displayArea.style.height="50px";
+displayArea.style.textAlign ="center";
+
+btn_innertxt.onclick=()=>{
+    this.displayArea.innerText="Przycisk InnerText zadziałał."; 
+};
+
+btn_innerhtml.onclick=()=>{
+    this.displayArea.innerHTML="<h1> Przycisk InnerHTML zadziałał.</h1>"; 
+};
 
