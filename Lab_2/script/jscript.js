@@ -77,36 +77,43 @@ btn_innerhtml.onclick=()=>{
 var gal_prev_btn = document.getElementsByClassName("carousel-control-prev")[0];
 var gal_next_btn = document.getElementsByClassName("carousel-control-next")[0];
 var img_area_handler = document.getElementById("display_img");
-img_area_handler.style.maxHeight="900px";
+img_area_handler.style.maxHeight="600px";
 img_area_handler.style.objectFit="contain";
+
+
 var indicator_handler = document.getElementsByTagName("ol")[0];
 var img_description_handler=document.getElementsByClassName("carousel-caption")[0];
 
 
 var available_images= ["image/zalew_koronowski.jpg","image/cisowska_struga.jpg","image/rzeka_stozka.jpg","image/krzywa_rzeka.jpg"];
 var available_images_descriptions=["Zalew koronowski.","Cisowska Struga", "Rzeka Stążka","Rzeka Krzywa"];
-var acctual_img_index=0;
+var current_img_index=0;
 
 gal_prev_btn.onclick = ()=>
 {
-    indicator_handler.children[Math.abs( acctual_img_index) % available_images.length].classList.remove("active"); // calc acctual index and remove class active
-    acctual_img_index-=1; // decrement by 1  because we want prev img
-    var new_index=Math.abs( acctual_img_index) % available_images.length; // calc new img index.
+    indicator_handler.children[current_img_index].classList.remove("active");// acctual index and remove class activ
 
-    indicator_handler.children[new_index].classList.add("active");
-    img_area_handler.src = available_images[ new_index ];
-    img_description_handler.children[0].innerText = available_images_descriptions[new_index];
+    if(current_img_index == 0){ // calc new index
+        current_img_index = available_images.length - 1;}
+    else{
+        current_img_index--;}
+
+    indicator_handler.children[current_img_index].classList.add("active"); // change bottom indicator to prev elemnet.
+    img_area_handler.src = available_images[ current_img_index ]; // change img
+    img_description_handler.children[0].innerText = available_images_descriptions[current_img_index]; // change img desc
 }
 
 gal_next_btn.onclick = ()=>
 {
-    indicator_handler.children[Math.abs( acctual_img_index) % available_images.length].classList.remove("active");
-    acctual_img_index ++;
-    var new_index=Math.abs( acctual_img_index) % available_images.length;
+    indicator_handler.children[current_img_index].classList.remove("active");
+     if(current_img_index == available_images.length - 1){
+            current_img_index = 0}
+        else{
+            current_img_index++;}
 
-    indicator_handler.children[new_index].classList.add("active");
-    img_area_handler.src = available_images[ new_index ];
-    img_description_handler.children[0].innerText = available_images_descriptions[new_index];
+    indicator_handler.children[current_img_index].classList.add("active");
+    img_area_handler.src = available_images[ current_img_index ];
+    img_description_handler.children[0].innerText = available_images_descriptions[current_img_index];
 }
 
 
