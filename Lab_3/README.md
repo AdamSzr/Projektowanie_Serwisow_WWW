@@ -39,7 +39,7 @@ Gdy operacja przebiegnie pomyślnie uruchomiony jest event 'load', w przeciwnym 
 Powyższe eventy wykorzystałem aby zbudować ramkę, z której nic nie jestesmy w stanie skopiować, wkleić, czy też wyciąć.
 ![""](md_img/input_no_CVX.png)<br>
 
-### Zdarzenie: **mousemove** **removeEventListener**
+### Zdarzenie: **mousemove** && **removeEventListener**
 Zdarzenie wykorzystałem aby wyświetlić położenie myszy w danym kontenerze.
 Dodatkowo zamieściłem przycisk uniemożliwiający dalsze odczytywanie pozycji.
 
