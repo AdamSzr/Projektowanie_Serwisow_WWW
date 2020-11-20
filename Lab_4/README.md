@@ -1,6 +1,6 @@
 # Lab_4 Gra przeglądarkowa - Tetris
 
-[Link do tresci zadania](https://zacniewski.gitlab.io/teaching/2020-serwisy-www/)
+## [Link do tresci zadania](https://zacniewski.gitlab.io/teaching/2020-serwisy-www/)
 
 ### Wykorzystane technologie.
 * HTML5
@@ -12,7 +12,7 @@
 * klawisze arrow_left, arrow_right, arrow_down - odpowiadają za poruszanie puzla na planszy
 
 ## Start gry.
-__Gdy gra startuje 1 puzel, pojawia się na samej górze, w połowie szerokości planszy, index(0,area.width/2)__
+__Gdy gra startuje 1-szy puzel, pojawia się na samej górze, w połowie szerokości planszy, index(0,area.width/2)__
 ![Stan początkowy gry.](./md_files/lost_after.png)
 
 ## Zdobywanie punktów.
