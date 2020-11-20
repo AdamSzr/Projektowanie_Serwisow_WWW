@@ -1,0 +1,21 @@
+body
+{
+    background-color: rgb(189, 189, 187);
+}
+#canv
+{
+    margin-top: 15px;
+}
+
+canvas
+{
+    border-radius: 2px;
+}
+#points
+{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black !important;
+    background-color: lightgreen;
+}
