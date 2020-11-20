@@ -15,7 +15,7 @@ __Gdy gra startuje 1 puzel, pojawia się na samej górze, w połowie szerokości
 ![Przed ulożeniu parteru.](./md_files/row_before.png)
 
 ## Zdobywanie punktów.
-__Gdy ułożymy cały wiersz, następuje wycięcie go z tablicy, wypełnienie wartością 0, <br\>a następnie wrzucony na początek planszy, oraz zdobywamy punkty, combo (multi-rows) są dodatkowo punktowane.__
+__Gdy ułożymy cały wiersz, następuje wycięcie go z tablicy, wypełnienie wartością 0, <br\>a następnie wrzucony na początek planszy, oraz zdobywamy punkty, combo (multi-rows) są dodatkowo punktowane.__<br\>
 ![Po ulożeniu parteru.](./md_files/row_after.png)
 
 ## Koniec gry.
