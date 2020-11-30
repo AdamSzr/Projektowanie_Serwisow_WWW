@@ -18,11 +18,15 @@ Wymyślenie tylu przykładów (5 Zadań * 2 podpunkty każde zad * 2 arg w każd
 
 ## Zadanie 1.
 ##### __funkcja zwrotna (callback)__
+
 ![](./md_files/zad1_phone.png)
+
 Ryc 1. dane w postaci string json, posiada 2 obiekty (telefony)
 ![](./md_files/zad1_trees.png)
+
 Ryc 2. dane w postaci obiektu json, posiada 2 obiekty (sosnę oraz świerk)
 ![](./md_files/zad1.png)
+
 Ryc 3. Wynik pierwszej linii to pobranie z obiektu telefony, ilość rdzeni i przemnożenie przez taktowanie per rdzeń.
 Natomiast 2 linia prezentuje, użycie string-template, do którego delegat funkcji. funkcja template string następnie iteruje po niej wywołując index jako argument dla funkcji.
 W ten sposób dopóki nie wystąpi exception, pobieram wszystkie nazwy drzew z obiektu json .
@@ -32,6 +36,7 @@ W ten sposób dopóki nie wystąpi exception, pobieram wszystkie nazwy drzew z o
 ## Zadanie 2
 #### __obiekt Promise (resolve, reject) z metodami then(), catch() i finally() + axios (lub fetch)__
 ![](./md_files/zad2.png)
+
 Opis 1 linii. pobieram z api, ilość osób, ilość postów. wyliczamy średnią i wstawiam ww. napis.
 Opis ramki. pobieram z api, Url flagi Polski, pobieram z api, napis 'Polska', komponuje w **Boostrap Card** i gotowe.
  
@@ -41,6 +46,7 @@ Opis ramki. pobieram z api, Url flagi Polski, pobieram z api, napis 'Polska', ko
 
 #### __async/await + fetch (lub axios)__
 ![](./md_files/zad3.png)
+
 Linia 1. pobieram z api usera, wyciągam od niego zipcode, następnie pobieramy 2 usera, tym razem wyciągam geo lat/lng i parsuje Float.
 Komponuję w obiekt div i zamieszczam na stronie.
 Linia 2. pobieram z api listę userów, wyciągam od nich imię, oraz miejscowość w której mieszkają,
@@ -55,6 +61,7 @@ Komponuję kolejnego div'a i zamieszczam na stronie.
 #### __AJAX__
 
 ![](./md_files/zad4.png)
+
 Zatem, to zadanie wykonałem w AJAX, oba przyciski maja subskrypcję eventu click.
 button_1 => 
 pobiera z api listę wszystkich zadań, iteruje po nich, zliczając ile jest ukończonych a ile nieukończonych.
@@ -71,9 +78,11 @@ utworzona tabelę prezentuję na stronie.
 #### __Feach__
 
 ![](./md_files/zad5a.png)
+
 Ryc 1.
  
 ![](./md_files/zad5b.png)
+
 Ryc 2.
  
  
