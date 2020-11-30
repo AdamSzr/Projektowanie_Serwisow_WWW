@@ -36,7 +36,9 @@ Opis 1 linii. pobieram z api, ilość osób, ilość postów. wyliczamy średni�
 Opis ramki. pobieram z api, Url flagi Polski, pobieram z api, napis 'Polska', komponuje w **Boostrap Card** i gotowe.
  
 <hr>
+
 ## Zadanie 3
+
 #### __async/await + fetch (lub axios)__
 ![](./md_files/zad3.png)
 Linia 1. pobieram z api usera, wyciągam od niego zipcode, następnie pobieramy 2 usera, tym razem wyciągam geo lat/lng i parsuje Float.
@@ -47,8 +49,11 @@ Komponuję kolejnego div'a i zamieszczam na stronie.
  
  
 <hr>
+
 ## Zadanie 4
+
 #### __AJAX__
+
 ![](./md_files/zad4.png)
 Zatem, to zadanie wykonałem w AJAX, oba przyciski maja subskrypcję eventu click.
 button_1 => 
@@ -60,8 +65,11 @@ następnie caly słownik 'translations' przekazuję do funkjci która parsuje go
 utworzona tabelę prezentuję na stronie.
  
 <hr>
+
 ## Zadanie 5
+
 #### __Feach__
+
 ![](./md_files/zad5a.png)
 Ryc 1.
  
@@ -78,7 +86,9 @@ Ryc 2. pobieram z api 2 userów, wyciągam od nich imię oraz wiek, następnie p
  
 <hr>
 ## Zadanie 6
+
 #### __AXIOS__
+
 ![](./md_files/zad6.png)
  
 Zatem, w 6a, wykonuje call do api aby otrzymać obiekt usera, parsuję go aby otrzymać numer ulicy.
@@ -90,7 +100,9 @@ wykonuję kolejny api call aby pobrać kolejną wartość, tym razem ilość imi
 Prezentuję dane.
  
 <hr>
+
 ## Zadanie Dodatkowe
+
 ![](./md_files/zadDodatkowe.png)
  
 Chciałbym również przedstawić funkcję która przyjmuje jako argumenty(generator obiektów , lista filtrów).
@@ -99,17 +111,21 @@ Zwracany jest obiekt który przejdzie przez wszystkie filtry pomyślnie.
 Gdy któryś z filtrów nie przepuści obiektu, Pobierany jest kolejny a cała sekwencja filtrowania rozpoczyna się od nowa.
  
 #### Generator obiektów
+
 ![](./md_files/zadDodatkowe_generator.png)
  
 #### Kilka domyślnych filtrów.
+
 ![](./md_files/zadDodatkowe_filtry.png)
  
 ### Przykład użycia.
+
 ![](./md_files/zadDodatkowe_example_male.png)
+
 Ryc 1. Osoba o płci męskiej.
  
- 
 ![](./md_files/zadDodatkowe_example_country.png)
+
 Ryc 2. Osoba o płci męskiej oraz  pochodząca z ['Germany', 'Spain', 'New Zealand', 'Brazil', 'Canada', 'Finland', 'Switzerland', 'Australia', 'United States']
  
  
