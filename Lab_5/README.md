@@ -14,8 +14,6 @@
 Na wstępie chciałbym przekazać, iż najtrudniejszą cześcią tej laborki było niesprecyzowanie. 
 Wymyślenie tylu przykładów (5 Zadań * 2 podpunkty każde zad * 2 arg w każdym podpunkcie. = 20 api call's)
 
-<hr>
-
 ## Zadanie 1.
 ##### __funkcja zwrotna (callback)__
 
@@ -31,7 +29,7 @@ Ryc 3. Wynik pierwszej linii to pobranie z obiektu telefony, ilość rdzeni i pr
 Natomiast 2 linia prezentuje, użycie string-template, do którego delegat funkcji. funkcja template string następnie iteruje po niej wywołując index jako argument dla funkcji.
 W ten sposób dopóki nie wystąpi exception, pobieram wszystkie nazwy drzew z obiektu json .
  
-<hr>
+
 
 ## Zadanie 2
 #### __obiekt Promise (resolve, reject) z metodami then(), catch() i finally() + axios (lub fetch)__
@@ -39,8 +37,7 @@ W ten sposób dopóki nie wystąpi exception, pobieram wszystkie nazwy drzew z o
 
 Opis 1 linii. pobieram z api, ilość osób, ilość postów. wyliczamy średnią i wstawiam ww. napis.
 Opis ramki. pobieram z api, Url flagi Polski, pobieram z api, napis 'Polska', komponuje w **Boostrap Card** i gotowe.
- 
-<hr>
+
 
 ## Zadanie 3
 
@@ -54,7 +51,6 @@ Sumuje za pomocą **reduce** ilość znaków w imionach, i miejscowościach.
 Komponuję kolejnego div'a i zamieszczam na stronie.
  
  
-<hr>
 
 ## Zadanie 4
 
@@ -63,15 +59,16 @@ Komponuję kolejnego div'a i zamieszczam na stronie.
 ![](./md_files/zad4.png)
 
 Zatem, to zadanie wykonałem w AJAX, oba przyciski maja subskrypcję eventu click.
+
 button_1 => 
 pobiera z api listę wszystkich zadań, iteruje po nich, zliczając ile jest ukończonych a ile nieukończonych.
 Wylicza % ukończonych zadań i wstawia do elementu div w pole innerText.
+
 button_2 =>
 pobiera z api informację o Polsce, pobieram wartość 'translations' z zwracanego obiektu,
 następnie caly słownik 'translations' przekazuję do funkjci która parsuje go do postaci tabeli.
 utworzona tabelę prezentuję na stronie.
- 
-<hr>
+
 
 ## Zadanie 5
 
@@ -93,7 +90,6 @@ z otrzymanych w ten sposób danych komponuję listę i załączam do strony.
  
 Ryc 2. pobieram z api 2 userów, wyciągam od nich imię oraz wiek, następnie przy pomocy stringTemplate i JSON.stringify() prezentuje dane.
  
-<hr>
 ## Zadanie 6
 
 #### __AXIOS__
@@ -108,7 +104,7 @@ Otrzymuję w ten sposób 2 liczby(int nrUlicy, float prawdopodobieństwo). odejm
 wykonuję kolejny api call aby pobrać kolejną wartość, tym razem ilość imion (tutaj 'jan') w bazie danych. 
 Prezentuję dane.
  
-<hr>
+
 
 ## Zadanie Dodatkowe
 
