@@ -2,19 +2,22 @@
  
 ## [Link do tresci zadania](https://zacniewski.gitlab.io/teaching/2020-serwisy-www/)
 <hr>
+
 ### Wykorzystane technologie.
 * HTML5
 * JavaScript
 * Boostrap
 <hr>
+
 ### Wstęp.
 
 Na wstępie chciałbym przekazać, iż najtrudniejszą cześcią tej laborki było niesprecyzowanie. 
 Wymyślenie tylu przykładów (5 Zadań * 2 podpunkty każde zad * 2 arg w każdym podpunkcie. = 20 api call's)
 
 <hr>
+
 ## Zadanie 1.
-#####__funkcja zwrotna (callback)__
+##### __funkcja zwrotna (callback)__
 ![](./md_files/zad1_phone.png)
 Ryc 1. dane w postaci string json, posiada 2 obiekty (telefony)
 ![](./md_files/zad1_trees.png)
@@ -25,15 +28,16 @@ Natomiast 2 linia prezentuje, użycie string-template, do którego delegat funkc
 W ten sposób dopóki nie wystąpi exception, pobieram wszystkie nazwy drzew z obiektu json .
  
 <hr>
+
 ## Zadanie 2
-####__obiekt Promise (resolve, reject) z metodami then(), catch() i finally() + axios (lub fetch)__
+#### __obiekt Promise (resolve, reject) z metodami then(), catch() i finally() + axios (lub fetch)__
 ![](./md_files/zad2.png)
 Opis 1 linii. pobieram z api, ilość osób, ilość postów. wyliczamy średnią i wstawiam ww. napis.
 Opis ramki. pobieram z api, Url flagi Polski, pobieram z api, napis 'Polska', komponuje w **Boostrap Card** i gotowe.
  
 <hr>
 ## Zadanie 3
-####__async/await + fetch (lub axios)__
+#### __async/await + fetch (lub axios)__
 ![](./md_files/zad3.png)
 Linia 1. pobieram z api usera, wyciągam od niego zipcode, następnie pobieramy 2 usera, tym razem wyciągam geo lat/lng i parsuje Float.
 Komponuję w obiekt div i zamieszczam na stronie.
@@ -44,7 +48,7 @@ Komponuję kolejnego div'a i zamieszczam na stronie.
  
 <hr>
 ## Zadanie 4
-###__AJAX__
+#### __AJAX__
 ![](./md_files/zad4.png)
 Zatem, to zadanie wykonałem w AJAX, oba przyciski maja subskrypcję eventu click.
 button_1 => 
@@ -57,7 +61,7 @@ utworzona tabelę prezentuję na stronie.
  
 <hr>
 ## Zadanie 5
-###__Feach__
+#### __Feach__
 ![](./md_files/zad5a.png)
 Ryc 1.
  
@@ -74,7 +78,7 @@ Ryc 2. pobieram z api 2 userów, wyciągam od nich imię oraz wiek, następnie p
  
 <hr>
 ## Zadanie 6
-####__AXIOS__
+#### __AXIOS__
 ![](./md_files/zad6.png)
  
 Zatem, w 6a, wykonuje call do api aby otrzymać obiekt usera, parsuję go aby otrzymać numer ulicy.
