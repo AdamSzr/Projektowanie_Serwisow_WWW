@@ -1,0 +1,19 @@
+
+.app_content
+{
+  margin-top:  50px !important; 
+}
+.bar_links
+{
+  text-decoration: none !important;
+  background-color: bisque !important;
+  color: black !important;
+}
+.card_style
+{
+  width: 400px;
+}
+
+.style_link{
+  background-color: rgba(128, 255, 0, 0.438);
+}
