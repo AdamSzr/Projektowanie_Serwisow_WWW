@@ -10,29 +10,30 @@ import CardHeader from '@material-ui/core/CardHeader';
 import deszcz from './deszcz.jpg'
 import { TextField, Paper, Typography, AppBar, Tab, Avatar,Box,Grid,CardActionArea } from '@material-ui/core';
 
-function Home() {
+function Home(props) {
     return (
-        <div  >
-            <Grid>
-            <Card className='card_style'>
-              <CardActionArea>
-              <Typography gutterBottom variant="h5"  align='center'>
-                   Gdynia Lasy.
-                  </Typography>
-                <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  image={deszcz}
-                  title="Contemplative Reptile"
-                />
-                <CardContent>
-
-                  <Typography component="p">W deszczowy dzień.</Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        </div>
+      <div className="style_galery">
+        {props.data.map((element,idx,arr)=>{
+          return ( <Card className='card_style'>
+          <CardActionArea>
+          <Typography gutterBottom variant="h5"  align='center'>
+               {element['title']}
+              </Typography>
+            <CardMedia
+              component="img"
+              alt="Contemplative Reptile"
+              src= {element['src']} 
+              title="Contemplative Reptile"
+            />
+            <CardContent>
+              <Typography component="p"> {element['description']}</Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+        )
+        })}
+      </div>
+      
     )
 }
 

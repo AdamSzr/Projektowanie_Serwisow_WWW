@@ -8,7 +8,7 @@ import  Contact  from "./Contact";
 import Home from "./Home";
 import Zapychacz from "./Zapychacz"
 import { BrowserRouter, Route ,Switch} from 'react-router-dom'
-import { TextField, Paper, Typography, AppBar, Tab } from '@material-ui/core';
+import { TextField, Paper, Typography, AppBar, Tab, Card } from '@material-ui/core';
 
 
 
@@ -25,6 +25,19 @@ const presentdata=[
   }   
 ]
 
+const CardDataSource=[
+  {
+    src:"./deszcz.jpg",
+    title:"Gdynia",
+    description:"Las w Gdyni, widok obok Demptowa."
+  },
+  {
+    src:"./chojnice.jpg",
+    title:"Jezioro Karsińskie",
+    description:"Jezioro Karsińskie (kasz. Kôrsyńsczé Jezoro) – przepływowe jezioro rynnowe na Równinie Charzykowskiej (objęte Zaborskim Parkiem Krajobrazowym) o powierzchni 679 ha i maksymalnej głębokości dochodzącej do 27,1 m."
+  }
+]
+
 function App() 
 {
   return (
@@ -37,9 +50,11 @@ function App()
               <Route path='/zapychacz' render={()=>(
                 <Zapychacz data={presentdata}/>
               )}/>
-              <Route path='/about'  component ={About}/>
-              <Route path='/contact' component={Contact}/>   
-              <Route path='/' component={Home}/>
+              <Route path='/contact' component={Contact}/> 
+
+              <Route path='/' render={()=>(
+                <Home data={CardDataSource}/>
+              )}/>
             </Switch> 
           </Typography>
        </BrowserRouter>

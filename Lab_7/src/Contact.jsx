@@ -21,10 +21,9 @@ function Contact() {
                         <InputLabel htmlFor="email">Email</InputLabel>
                         <Input id="email" type="email" />
                     </FormControl>
-
                     <FormControl margin="normal" fullWidth>
-                        <InputLabel htmlFor="email">Message</InputLabel>
-                        <Input id="email" multiline rows={4} />
+                        <InputLabel htmlFor="telephone">Tel.</InputLabel>
+                        <Input id="telephone" type="tel" />
                     </FormControl>
 
                     <Button variant="contained" color="primary" size="medium">

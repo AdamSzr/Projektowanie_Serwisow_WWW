@@ -17,3 +17,11 @@
 .style_link{
   background-color: rgba(128, 255, 0, 0.438);
 }
+
+.style_galery
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 32%;
+
+}

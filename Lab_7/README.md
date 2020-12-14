@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Lab_7  React - aplikacja nr 2
+ 
+## [Link do tresci zadania](https://zacniewski.gitlab.io/teaching/2020-serwisy-www/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dodatkowe informacje.
+- Nazwa pliku = Nazwa komponentu + '.jsx'
 
-## Available Scripts
+### 1. należy stworzyć trzy “podstrony” (komponenty link, Switch i Route) 
+* Kod poniżej realizuje 3 podstrony ( 1 - "Home", 2 - "Zapychacz", 3 - "Contact")
 
-In the project directory, you can run:
+![](./md_files/appjs.png)
 
-### `npm start`
+### 2. na każdej z ww. podstron powinny znaleźć się trzy różne komponenty z Material UI,
+![](./md_files/Home_code.png)
+Ryc 1. **Home Page** - zawiera komponenty 'Card', 'CardMedia', 'CardActionArea', 'CardMedia'
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](./md_files/Zapychacz_code.png)
+Ryc 2. **Zapychacz** - Zawiera komponenty 'Table', 'TableRow', 'TableCell', 'TableHead', 'Paper', 'TableBody'
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![](./md_files/Contact_code.png)
+Ryc 3. **Contact Page** - Zawiera komponenty 'FormControl', 'InputLabel', 'Input', 'Button'
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. plusy ➕➕➕ za wykorzystanie ‘state’, ‘props’, innych bibliotek (np. bootstrap)
+![](./md_files/appjs_data.png)
+Ryc 4. Dane przygotowane do przekazana, komponentowi 'Dziecku'
 
-### `npm run build`
+![](./md_files/appjs.png)
+Ryc 5. Przekazanie danych do komponentu. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+App.js jest głownym elementem "Korzeniem".
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Osiągnięty efekt.
 
-### `npm run eject`
+![](./md_files/Home.png)
+Ryc 6. Widok - Home - Dane (img src,opis,tytuł) przekazane poprzez Props. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](./md_files/Zapychacz.png)
+Ryc 7. Widok - Zapychacz - Dane przekazane przez Props. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](./md_files/Contact.png)
+Ryc 8. Widok - Contact. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

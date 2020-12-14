@@ -16,34 +16,30 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
 
-function Zapychacz(props) { // data from apicall in json format. id, name username
+var some;
 
+function Zapychacz(props) { 
   return (
     <div>
       <Paper >
-        {/* <Typography variant='h4' > 3 elementy a tak naprawadę nic  <EmojiEmotionsIcon /> </Typography> */}
-      </Paper>
-      <Paper >
         <Table >
-
           <TableHead>
             <TableRow>
               <TableCell>Id</TableCell>
               <TableCell align="right">Name</TableCell>
               <TableCell align="right">Username</TableCell>
-
             </TableRow>
           </TableHead>
-
           {/* https://jsonplaceholder.typicode.com/users */}
           <TableBody>
           { props.data.map((elementInJson,idx,arr)=>{
-                console.log(elementInJson);
-                <TableRow  key={idx}>
+                // console.log(elementInJson);
+               return ( <TableRow  key={idx}>
                     <TableCell component="th" scope="row" > { elementInJson.id } </TableCell>
                     <TableCell align="right">{ elementInJson.name }</TableCell>
                     <TableCell align="right">{ elementInJson.username }</TableCell>
                 </TableRow>
+                )
              })}
           </TableBody>
         </Table>
