@@ -6,4 +6,4 @@
 * [Lab_4](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_4) Gra przeglądarkowa :white_check_mark:
 * [Lab_5](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_5) Asynchroniczny Java Script :white_check_mark:
 * [Lab_6](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_6) React - aplikacja nr 1 :white_check_mark:
-* [Lab_7](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_7) React - aplikacja nr 2 :mag:
+* [Lab_7](https://github.com/AdamSzr/projektowanie-serwisow-www-Szreiber-185ic/tree/master/Lab_7) React - aplikacja nr 2 :white_check_mark:
