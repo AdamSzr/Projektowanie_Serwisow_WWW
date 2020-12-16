@@ -33,13 +33,16 @@ App.js jest głownym elementem "Korzeniem".
 
 # Osiągnięty efekt.
 
-![](./md_files/Home.png)
+![](./md_files/home.png)
+
 Ryc 6. Widok - Home - Dane (img src,opis,tytuł) przekazane poprzez Props. 
 
-![](./md_files/Zapychacz.png)
+![](./md_files/zapychacz.png)
+
 Ryc 7. Widok - Zapychacz - Dane przekazane przez Props. 
 
-![](./md_files/Contact.png)
+![](./md_files/contact.png)
+
 Ryc 8. Widok - Contact. 
 
 
