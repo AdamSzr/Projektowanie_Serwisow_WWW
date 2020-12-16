@@ -23,9 +23,11 @@ Ryc 3. **Contact Page** - Zawiera komponenty 'FormControl', 'InputLabel', 'Input
 
 ### 3. plusy ➕➕➕ za wykorzystanie ‘state’, ‘props’, innych bibliotek (np. bootstrap)
 ![](./md_files/appjs_data.png)
+
 Ryc 4. Dane przygotowane do przekazana, komponentowi 'Dziecku'
 
 ![](./md_files/appjs.png)
+
 Ryc 5. Przekazanie danych do komponentu. 
 
 App.js jest głownym elementem "Korzeniem".
