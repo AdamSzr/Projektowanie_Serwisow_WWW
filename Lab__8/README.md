@@ -18,7 +18,7 @@
 
 ![](./md_files/jsDoc2.png)
 
-- dzięki której informacje po najechaniu na funkcję klasę parametr, posiadają pełen opis.
+- dzięki której informacje po najechaniu na funkcję/klasę/parametr, posiadają pełen opis.
 
 ![](./md_files/jsDoc.png)
 
